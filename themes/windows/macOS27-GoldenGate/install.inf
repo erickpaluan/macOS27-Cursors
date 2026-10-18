@@ -1,0 +1,84 @@
+; macOS 27 Golden Gate cursor scheme for Windows 10 / 11
+; Right-click > Install (Windows 11: Show more options > Install)
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg, Wreg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\arrow.cur,%10%\%CUR_DIR%\help.cur,%10%\%CUR_DIR%\busybutclickable.ani,%10%\%CUR_DIR%\wait.ani,%10%\%CUR_DIR%\cross.cur,%10%\%CUR_DIR%\ibeam.cur,,%10%\%CUR_DIR%\notallowed.cur,%10%\%CUR_DIR%\resizenorthsouth.cur,%10%\%CUR_DIR%\resizeeastwest.cur,%10%\%CUR_DIR%\resizenorthwestsoutheast.cur,%10%\%CUR_DIR%\resizenortheastsouthwest.cur,%10%\%CUR_DIR%\move.cur,,%10%\%CUR_DIR%\pointinghand.cur,,"
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\arrow.cur"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\help.cur"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\busybutclickable.ani"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\wait.ani"
+HKCU,"Control Panel\Cursors",Crosshair,0x00020000,"%10%\%CUR_DIR%\cross.cur"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\ibeam.cur"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,""
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\notallowed.cur"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\resizenorthsouth.cur"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\resizeeastwest.cur"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\resizenorthwestsoutheast.cur"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\resizenortheastsouthwest.cur"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\move.cur"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,""
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\pointinghand.cur"
+HKCU,"Control Panel\Cursors",Pin,0x00020000,""
+HKCU,"Control Panel\Cursors",Person,0x00020000,""
+
+[Scheme.Cur]
+arrow.cur
+busybutclickable.ani
+cell.cur
+closedhand.cur
+contextualmenu.cur
+copy.cur
+countingdownhand.ani
+countingupandownhand.ani
+countinguphand.ani
+cross.cur
+help.cur
+ibeam.cur
+ibeamhorizontal.cur
+ibeamvertical.cur
+makealias.cur
+move.cur
+notallowed.cur
+openhand.cur
+pointinghand.cur
+poof.cur
+resizedown.cur
+resizeeast.cur
+resizeeastwest.cur
+resizeleft.cur
+resizeleftright.cur
+resizenorth.cur
+resizenortheast.cur
+resizenortheastsouthwest.cur
+resizenorthsouth.cur
+resizenorthwest.cur
+resizenorthwestsoutheast.cur
+resizeright.cur
+resizesouth.cur
+resizesoutheast.cur
+resizesouthwest.cur
+resizeup.cur
+resizeupdown.cur
+resizewest.cur
+screenshotselection.cur
+screenshotwindow.cur
+wait.ani
+zoomin.cur
+zoomout.cur
+
+[Strings]
+CUR_DIR     = "Cursors\macOS27-GoldenGate"
+SCHEME_NAME = "macOS 27 Golden Gate"
