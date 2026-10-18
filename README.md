@@ -13,7 +13,7 @@ Grab the archive for your platform from the [latest release](../../releases/late
 | Platform | Package | Install |
 |---|---|---|
 | macOS (older versions) | `themes/macos/macOS27-GoldenGate.cape` | Open it with [Mousecape](https://github.com/alexzielenski/Mousecape), select it and press **Apply** |
-| Windows 10 / 11 | `themes/windows/macOS27-GoldenGate/` | Right-click `install.inf` → **Install**, then pick the *macOS 27 Golden Gate* scheme under Mouse settings → Pointers |
+| Windows 10 / 11 | `themes/windows/macOS27-GoldenGate/` | Double-click `install.bat` and confirm the prompt (copies, registers, activates and reloads in one go) |
 | Linux (X11 / Wayland) | `themes/linux/macOS27-GoldenGate/` | Run `sh install.sh`, or copy the folder to `~/.icons/` and select it in your cursor settings |
 
 Detailed steps for each platform are in [docs/INSTALL.md](docs/INSTALL.md).

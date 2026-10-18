@@ -3,5 +3,5 @@
 *.cape  binary
 *.pdf   binary
 *.png   binary
-*.inf   text eol=crlf
+*.bat   text eol=crlf
 themes/linux/**/cursors/* binary

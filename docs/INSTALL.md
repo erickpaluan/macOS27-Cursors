@@ -14,11 +14,9 @@ To undo: **Mousecape → Reset to Default**.
 ## Windows 10 / 11
 
 1. Extract the `macOS27-GoldenGate` folder.
-2. Right-click `install.inf` → **Install** (on Windows 11: **Show more options → Install**).
-3. Open **Settings → Bluetooth & devices → Mouse → Additional mouse settings → Pointers**.
-4. Choose **macOS 27 Golden Gate** in the *Scheme* list and click **Apply**.
+2. Double-click `install.bat` and confirm the administrator prompt. It copies every cursor to `C:\Windows\Cursors\macOS27-GoldenGate`, registers the scheme for the current user, activates it and reloads the live cursor set — done.
 
-The installer copies every cursor to `C:\Windows\Cursors\macOS27-GoldenGate` and registers the scheme for the current user. Cursors that have no Windows role (open/closed hand, copy, alias, zoom, etc.) can be assigned manually with **Browse…**.
+The reload step matters: writing the registry alone (the classic `.inf` route) leaves the running session showing the old pointers until something forces a reload, so the script calls `SystemParametersInfo` with `SPI_SETCURSORS` at the end. Cursors that have no Windows role (open/closed hand, copy, alias, zoom, etc.) can be assigned manually with **Browse…** in Mouse settings.
 
 Each `.cur`/`.ani` file contains 32, 48, 64, 96 and 128 px images, so the cursors stay sharp at any display scaling and pointer size.
 
